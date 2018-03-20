@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="接着上一篇博客所说的，我们现在只能看到一个非常简陋的由hexo所默认的主题背景，所以我们现在就如何了解和更换博客主题做一个探讨。 首先我们得了解的是hexo中两个重要的配置文件（_config.yml），名字是一样的，只是放的位置不同,一个叫做站点配置文件，放在根目录文件夹下，一个叫做主题配置文件，放在根目录themes文件下的每一个主题文件夹里面，这里我们说一下什么是主题文件夹，首先，当你安装h">
+<meta name="description" content="接着上一篇博客所说的，我们现在只能看到一个非常简陋的由hexo所默认的主题背景，所以我们现在就如何了解和更换博客主题做一个探讨。 首先我们得了解的是hexo中两个重要的配置文件（_config.yml），名字是一样的，只是放的位置不同,一个叫做站点配置文件，放在根目录文件夹下，另一个叫做主题配置文件，放在根目录themes文件下的每一个主题文件夹里面，这里我们说一下什么是主题文件夹，首先，当你安装">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo + GitHub搭建博客续集">
 <meta property="og:url" content="http://yoursite.com/2018/03/20/hexo-GitHub搭建博客续集/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="接着上一篇博客所说的，我们现在只能看到一个非常简陋的由hexo所默认的主题背景，所以我们现在就如何了解和更换博客主题做一个探讨。 首先我们得了解的是hexo中两个重要的配置文件（_config.yml），名字是一样的，只是放的位置不同,一个叫做站点配置文件，放在根目录文件夹下，一个叫做主题配置文件，放在根目录themes文件下的每一个主题文件夹里面，这里我们说一下什么是主题文件夹，首先，当你安装h">
+<meta property="og:description" content="接着上一篇博客所说的，我们现在只能看到一个非常简陋的由hexo所默认的主题背景，所以我们现在就如何了解和更换博客主题做一个探讨。 首先我们得了解的是hexo中两个重要的配置文件（_config.yml），名字是一样的，只是放的位置不同,一个叫做站点配置文件，放在根目录文件夹下，另一个叫做主题配置文件，放在根目录themes文件下的每一个主题文件夹里面，这里我们说一下什么是主题文件夹，首先，当你安装">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-20T08:42:32.308Z">
+<meta property="og:updated_time" content="2018-03-20T09:16:48.362Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo + GitHub搭建博客续集">
-<meta name="twitter:description" content="接着上一篇博客所说的，我们现在只能看到一个非常简陋的由hexo所默认的主题背景，所以我们现在就如何了解和更换博客主题做一个探讨。 首先我们得了解的是hexo中两个重要的配置文件（_config.yml），名字是一样的，只是放的位置不同,一个叫做站点配置文件，放在根目录文件夹下，一个叫做主题配置文件，放在根目录themes文件下的每一个主题文件夹里面，这里我们说一下什么是主题文件夹，首先，当你安装h">
+<meta name="twitter:description" content="接着上一篇博客所说的，我们现在只能看到一个非常简陋的由hexo所默认的主题背景，所以我们现在就如何了解和更换博客主题做一个探讨。 首先我们得了解的是hexo中两个重要的配置文件（_config.yml），名字是一样的，只是放的位置不同,一个叫做站点配置文件，放在根目录文件夹下，另一个叫做主题配置文件，放在根目录themes文件下的每一个主题文件夹里面，这里我们说一下什么是主题文件夹，首先，当你安装">
 
 
 
@@ -365,38 +365,35 @@
 
       
         <p>接着上一篇博客所说的，我们现在只能看到一个非常简陋的由hexo所默认的主题背景，所以我们现在就如何了解和更换博客主题做一个探讨。</p>
-<p>首先我们得了解的是hexo中两个重要的配置文件（_config.yml），名字是一样的，只是放的位置不同,一个叫做站点配置文件，放在根目录文件夹下，一个叫做主题配置文件，放在根目录themes文件下的每一个主题文件夹里面，这里我们说一下什么是主题文件夹，首先，当你安装hexo之后，默认你是有一个主题的，这个主题就是这个文件夹里面的所有的东西，一个文件夹代表一个主题，所以你现在应该明白了吧。</p>
-<p>想要其他的主题就是通过下载获得然后去站点配置文件去更改，先不说如何去改主题，hexo根目录下的每一个文件到顶是做什么的，我们现在去理解一下</p>
-<p>一下引入Hexo的官方文档中的一些数据<br>.<br>├── _config.yml<br>├── package.json<br>├── scaffolds<br>├── source<br>|   ├── _drafts<br>|   └── _posts<br>└── themes</p>
+<p>首先我们得了解的是hexo中两个重要的配置文件（_config.yml），名字是一样的，只是放的位置不同,一个叫做站点配置文件，放在根目录文件夹下，另一个叫做主题配置文件，放在根目录themes文件下的每一个主题文件夹里面，这里我们说一下什么是主题文件夹，首先，当你安装hexo之后，默认你是有一个主题的，这个主题就是这个文件夹里面的所有的东西，一个文件夹代表一个主题，所以你现在应该明白了吧。</p>
+<p>想要其他的主题就是通过下载获得然后去站点配置文件去更改，先不说如何去改主题，hexo根目录下的每一个文件到底是做什么的，我们现在去理解一下</p>
+<p>以下引入Hexo的官方文档中的一些数据<br>.<br>├── _config.yml<br>├── package.json<br>├── scaffolds<br>├── source<br>|   └── _posts<br>└── themes</p>
 <p>_config.yml:网站的配置信息，你可以在此配置大部分的参数，更多的参数请自行了解。</p>
 <p>package.json:应用程序的信息，好像是默认安装的，反正我没有删除，提示可以移除。</p>
 <p>soaffolds:模版文件夹,当您新建文章时，Hexo会根据scaffold来建立文件。Hexo的模板是指在新建的markdown文件中默认填充的内容。<br>例如，如果您修改scaffold/post.md中的<br>Front-matter内容，那么每次新建一篇文章时都会包含这个修改。</p>
 <p>source:资源文件夹是存放用户资源的地方。除 _posts 文件夹之外，开头命名为 _ (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。<br>其实就是你想创建一篇新的博客文章，就通过</p>
 <p>hexo new “”            //双引号里面放你的文章标题</p>
 <p>这句命令行就可以创建，以.md结尾的文件，一般默认放在_posts文件下<br>你也通过设置站点配置文件更改。</p>
-<p>themes:这个就是我上述所说的主题文件夹了，官方说Hexo会根据主题生成静态页面，也就是你通过站点配置文件配置之后，想用谁就用谁，但是首先你得下载这个主题，下载主题的命令行我也不是很明白,所以你得找百度了，我是用的next主题，命令行是<br>(前提是你得打开git bash在hexo跟目录下)：</p>
-<p>$ git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next</p>
-<p>这样稍等一下你就应该下载成功next主题，接下来就是替换主题<br>(你可以去hexo根目录下的themes看一看)在站点配置文件中找到 theme 属性更改为next就可以了。</p>
+<p>themes:这个就是我上述所说的主题文件夹了，官方说Hexo会根据主题生成静态页面，也就是你通过站点配置文件配置之后，想用谁就用谁，但是首先你得下载这个主题，下载主题的命令行我也不是很明白,所以你得找百度了，我是用的next主题，命令行是(前提是你得打开git bash在hexo跟目录下)：<br>$ git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next</p>
+<p>这样稍等一下你就应该下载成功next主题，接下来就是替换主题<br>(你可以去hexo根目录下的themes看一看，有没有这个主题文件夹)              在站点配置文件中找到theme 属性更改为next就可以了。</p>
 <p>hexo  g     //生成</p>
 <p>hexo  s     //启动</p>
 <p>然后就可以查看这次更换主题效果了。</p>
 <p><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a><br>这个是next的使用文档你可以看一看，里面有很多，我也没看完咯。</p>
-<p>最重要的一点是发布：<br>hexo d            //发布到GitHub</p>
+<p>最重要的一点是发布：<br>hexo   d                        //发布到GitHub</p>
 <p>当然这建立在你所有的东西差不多都配置好了，才行，其实还漏了一点，就是SSH key,因为这是更加安全的一种做法(不要跟我说为什么，我也想问为什么）,首先在<br>打开 git bash输入以下：</p>
 <p>cd ~/.ssh     //检查本机已存在的ssh密匙，其中.后面接ssh加不加空格我也不清楚，我反正没加</p>
 <p>如果提示：No such file or directory说明你是第一次使用git,接着输入</p>
 <p>ssh-keygen -t rsa -c “”            //双引号里面输入的是你的邮件地址</p>
-<p>接下来会要你输入三次，都是回车就行，最终会生成一个文件在你的用户目录下面<br>的 .ssh\id_rsa.pub文件，记事本打开或者其他的编程工具打开，我用的是Sublime<br>复制其所有内容，粘贴之你的GitHub，进入个人设置，然后找到SSH and GPG keys<br>然后New SSH key就是创建一个新的，其中title随便你自己填写，key里面就是你要<br>粘贴的地方了<br><!--（GitHub随便百度一下都可以明白了，只是在注册时，你填写邮箱时，可能需要要一点时间验证，可能很快，可能半天一天的），最重要的一点就是注册GitHub时你的用户名就是你以后的访问地址了（当然用域名也可以），所以小心一点，还有就是你注册成功之后，你得创建一个仓库（这个可能一下子你注册了不能使用，我也不清楚具体是怎么样的，反正我等了也不知道多久，我主要注册之后就没有立即使用），上面所说的邮箱验证你得验证了，看其他人所说的，只要验证
-10-30分钟就可以了。
-创建仓库时，你的仓库名必须是你的用户名.github.io,比如说我的
-Cbuer.github.io--></p>
+<p>接下来会要你输入三次，都是回车就行，最终会生成一个文件在你的用户目录下面<br>的 .ssh\id_rsa.pub文件，记事本打开或者其他的编程工具打开，我用的是Sublime<br>(我连写文章用的都是Sublime，就问你可不可怕，没谁可以与我一战了)复制其所有内容，粘贴之你的GitHub，进入个人设置，然后找到SSH and GPG keys<br>然后New SSH key就是创建一个新的，其中title随便你自己填写，key里面就是你要<br>粘贴的地方了<br>《（GitHub随便百度一下都可以明白了，只是在注册时，你填写邮箱时，可能需要要一点时间验证，可能很快，可能半天一天的），最重要的一点就是注册GitHub时你的用户名就是你以后的访问地址了（当然用域名也可以），所以小心一点，还有就是你注册成功之后，你得创建一个仓库（这个可能一下子你注册了不能使用，我也不清楚具体是怎么样的，反正我等了也不知道多久，我主要注册之后就没有立即使用），上面所说的邮箱验证你得验证了，看其他人所说的，只要验证<br>10-30分钟就可以了。<br>创建仓库时，你的仓库名必须是你的用户名.github.io,比如说我的<br>Cbuer.github.io》</p>
 <p>接下来你可以检测一下是否成功</p>
-<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>     //这里不是不是很明白，提交就是</p>
+<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>                 //这里不是不是很明白，提交就是</p>
 <p>如果提示Are you sure you want to continue connecting (yes/no)?     输入yes，然后会看到：</p>
 <p>Hi <!--这里是你的GitHub用户名--> You’ve successfully authenticated, but GitHub does not provide shell access.<br>这个就是提示你SSH配置成功了，你还需要配置一下：</p>
 <p>git config –global user.name “<!--你的GitHub用户名-->“</p>
 <p>git config –global user.email “<!--你的GitHub邮箱-->“</p>
-<p>反正到这也差不多了，因为我也乱七八糟的拼凑起来的，许多缺点或错误的地方希望大家告知，有事没事聊聊，幸福你我他！！！</p>
+<p>反正到这也差不多了，因为我也乱七八糟的拼凑起来的，许多缺点或错误的地方希望大家告知，有事没事聊聊，幸福你我他！！！<a href="mailto:1376904540@qq.com" target="_blank" rel="noopener">1376904540@qq.com</a></p>
+<p>手机跟电脑访问真的不一样（亲身体验），静态框架的自适应原因吗？明天开始弄老师布置的任务，一个对我而言算是很大的Web项目了，刚开始老师说从前端到后端再到数据库这个想想还行，别跟我说实操，那怕是要我命还不带玩的，自己也想挑战一下，但是数据库跟前端我是真的菜……下次依旧！</p>
 
       
     </div>
