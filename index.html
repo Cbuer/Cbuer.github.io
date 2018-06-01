@@ -286,6 +286,141 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/01/Git-常用命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="陈不二">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/my.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/01/Git-常用命令/" itemprop="url">Git 常用命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-01T08:52:49+08:00">
+                2018-06-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/01/Git-常用命令/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/06/01/Git-常用命令/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>git add   //从工作区提交到暂存区<br>git commit -m  //从暂存区提交到提交区<br>git status  //查看当时的状态<br>git log  //查看日志<br>git reset –hard commitid  (commitid 可以从git log查看到)  //根据id返回任意版本<br>git log –pretty=oneline   //返回版本id<br>git reset –hard HEAD^       //返回上一个版本<br>git reset –hard HEAD^^    //返回上上一个版本<br>git reflog               //返回所有版本id<br>git checkout – 自定义名   //后退操作<br>git reset HEAD 自定义名    //对于暂存区的文件执行到提交区最新版本<br>git checkout -b 自定义名   //切出一个分支<br>git branch -d 分支名        //删除分支，必须在别的分支<br>git branch -D 分支名       //强制分支<br>git branch              //查看分支<br>git checkout 分支名       //切换分子</p>
+<p>git merge 分支名       //合并分支名（快速合并）</p>
+<p>git config –global –unset user.name      删除<br>git config –global –add user.name    添加</p>
+<p>–配置别名（偷懒的程序员）<br>git config –global alias.st 系统命令</p>
+<p>–打标签<br>git tag v1  给当前版本打上标签<br>git tag v2  commitid   给对应的id打上标签<br>git tag -d  标签名   删除标签</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/Spring-IOC与AOP学习小结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -368,7 +503,7 @@
       
         
           
-            <p>&nbsp;&nbsp;过几天就是自己上台表述Spring框架的知识点及其功能（原理不敢说懂了了），所以也就Spring单独的学习了一下，从中就把自己所学的与自己的理解跟大家分享一下。<br>&nbsp;&nbsp;个人认为Spring框架是一个非常NB的开源框架，因为她大大减少了我们开发J2EE所需要的配置和环境搭建，而且解决了从前开发J2EE的高度耦合、后期维护难等问题，实现了低耦合、高内聚的设计思想。并且她不仅仅提供了这些。<br>Spring从其名我们可以看出是春天的意思，正如其名一样，Spirng对于开发J2EE的开发人员就是带来了春天，而且越来越强大，其整合其他框架的融合性也是其一大亮点。<br>&nbsp;&nbsp;Spring中的功能有很多，其中最重要的分别为IOC和AOP,功能甚是强大，让我流连忘返，但还是许多的东西不知其理，还得继续。<br>IOC:控制反转又称DI(依赖注入，她并不是一种技术实现，而是一种设计思想。在如何一个具有实际意义的项目中，我们会使用很多类来描述它们特有的功能，通过类与类之间相互协作来完成特点的业务逻辑，这个时候，每个类都需要负责管理与自己有交互的类的引用于依赖，代码将会变得异常的难以维护以及高度耦合，而IOC就是用来处理解决这个问题，IOC把这些相互依赖对象的创建、协调分配交给Spring容器去做处理，每个对象只需要关注自身的业务逻辑关系就行了。</p>
+            <p>&nbsp;&nbsp;个人认为Spring框架是一个非常NB的开源框架，因为她大大减少了我们开发J2EE所需要的配置和环境搭建，而且解决了从前开发J2EE的高度耦合、后期维护难等问题，实现了低耦合、高内聚的设计思想。并且她不仅仅提供了这些。<br>Spring从其名我们可以看出是春天的意思，正如其名一样，Spirng对于开发J2EE的开发人员就是带来了春天，而且越来越强大，其整合其他框架的融合性也是其一大亮点。<br>&nbsp;&nbsp;Spring中的功能有很多，其中最重要的分别为IOC和AOP,功能甚是强大，让我流连忘返，但还是许多的东西不知其理，还得继续。<br>IOC:控制反转又称DI(依赖注入，她并不是一种技术实现，而是一种设计思想。在如何一个具有实际意义的项目中，我们会使用很多类来描述它们特有的功能，通过类与类之间相互协作来完成特点的业务逻辑，这个时候，每个类都需要负责管理与自己有交互的类的引用于依赖，代码将会变得异常的难以维护以及高度耦合，而IOC就是用来处理解决这个问题，IOC把这些相互依赖对象的创建、协调分配交给Spring容器去做处理，每个对象只需要关注自身的业务逻辑关系就行了。</p>
 <p>依赖注入分为三种：<br>接口注入、setter方法注入、构造方法注入</p>
 <p>以下几个问题非常精髓：<br>1.参与者都有谁？<br>对象、IOC/DI容器、某个对象的外部资源<br>2.依赖是什么？为什么需要依赖？<br>对象依赖IOC和DI容器，为什么对象依赖IOC/DI容器因为需要IOC/DI容器提供对象所需外部的资源<br>3.注入是什么？又注入了什么？<br>IOC/DI容器注入对象，注入了对象所需要的资源<br>4.控制反转：谁控制谁？控制什么？为什么叫反转？存在正转吗？<br>IOC/DI控制对象 、控制创建对象的实例，反转是相对于正转来说的，正转好比如说：当A类需要B类的东西时，你会使用什么办法来解决？那就是创建她的对象，也就是A类主动获取所需要的外部资源B类,这种情况就是正转，而什么是反向？那就是A类不主动获取外部资源B，而是被动等待，等待IOC/DI容器获取这个B类的实例，然后反向的注入到A类中<br>5控制反转与依赖注入是同一个概念吗？<br>控制反转与依赖注入是对一件事的不同描述，也就是描述的角度不同<br>控制反转：从应用程序的角度，应用程序依赖容器创建并注入所需要的外部资源<br>依赖注入：从容器的角度，容器控制应用程序，由容器的反向注入应用程序所需要的外部资源</p>
 <p>上述几个问题对于IOC的大概做了一个提问，而其答案也是我们所需的，能让我们更好的、快速的了解IOC与DI,接下来让我们对Spring的另一个核心AOP做一个了解</p>
@@ -630,411 +765,6 @@ public AuthenticationInfo doGetAuthenticationInfo(
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/08/多点真诚，少点套路/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="陈不二">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/my.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/08/多点真诚，少点套路/" itemprop="url">多点真诚，少点套路</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-08T03:12:05+08:00">
-                2018-05-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/05/08/多点真诚，少点套路/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/05/08/多点真诚，少点套路/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;有时候吧，人的思想真的及其复杂的，不知道如何去理解或者解释，如果当你来到这里看到<br>这篇文章时，我想对你说：“我的话永远对你有效，如果你还记得”。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;依稀记得，自己还算真诚，但是自己也知道还是不够真诚，以前的自己，好像不是很会想太多（真的是想的太少，才有了一些后悔的事情），但是在初三毕业的时候，我可能是开窍了，也许是上天给我的一个提醒，觉得我这样下去是错的（一切的一切都是有因的），明明中自己也不知道在干吗，可是还是继续的做下去，自己真的就是一个自我主义者，这一点随我爸，认死理，自己觉得对的，别人很难改变，就算再亲的人。后来，自己还是做着这样的一个人，一个以自我内心为主的人，而且为了内心中的道理，去撒谎圆其结论，只要证明自己所想的是正确的，心里得以安慰。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;还记得高中时，一个朋友怂恿我去追一个女孩，心里觉得那个女孩不错，斯文、温柔、安静的<br>一个典型的小家碧玉的女孩，可是那时候的自己，认为自己并不能给予她什么，也就没有发生这样的事情。说实话那时候自己在班上，成绩虽然不理想，但是因为对人友好吧，在那个小圈子里人缘还好（也就是成绩差的圈子），那个女孩也算，比我好一点咯，说到底自己当时还算理智的想问题的，这个思想应该是自己从家里人学到的（一个堂哥18岁就生了娃，还是未婚先孕），在我们家算是很早生娃的，还跟我关系很好，只知道堂哥所做的应该是不对的，有时候吧，一些事情就是这么的偶然，那时候自己所想所做的好像也就那样，并没有什么比那样更好的做法了，在当时这样的想法我是不会说出来，说道这里就是我还要点面子，中国人的传统问题，也就这样。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;慢慢的长大了，想的事情也更全面一些，其实自己以前所做的，要说错好像是错的，因为自己<br>所做的一切伤害了别人，然而自己内心还觉得是对的（总觉得对她而言应该算是好的），还不跟别人解释，我也服当时的自己，其实总结那时候自己为什么会这样想，追其原因就是因为自己没有责任二字，那时候的自己比较叛逆，也没有上进心，也不想一想自己的所作所为其实对于自己是对的，内心也想过就这样浑浑噩噩的过下去，但是自己好像还有在乎的人，但是自己能够给她幸福吗？这个就得回到上文所说的觉悟了，内心认为自己不能给予，所以有了放弃，正因为有了放弃和面子，才有了以前的谈话。责任二字是自己觉得对不起妈所想起来的，但还不够深入，逐渐的妈越来越身体不好了，我好想变得努力了，因为不想让妈担心我，从小我妈很疼我，我爸对我还好，但很少管教我，一般处于放养状态的，但做人的基本道理还是教我了，这一点我觉得很感谢我爸。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;其实还有很多话想说，但是自己又不知道该怎么说了，算算时间，离我初中毕业好像5年了，<br>还是挺想念初中s的，很多回忆和经历，对我来说很真实，因为还小，所有大家都挺单纯的，后来长大了，也没见过了，但是会与一些人联系一下。</p>
-<p>个人缺点：<br>从小到大自己就很懒，什么都带点，以致于自己都怀疑自己，懒到没边界，自己还能够找到一个好理由去解释，我就服自己这一点。<br>后来：<br>懒变得不切实际了，就变成简单了，后来说话都很少说了，再后来，几乎能够点头做的事，几乎不会带个字，渐渐地陋习改掉许多，但还是存在，因为深入骨髓了，但是因为姐经常美其名曰锻炼我，她的家务，基本上是我做的，也很无语，自己慢慢的觉得还好，生活本因如此。</p>
-<p>其实说了这些，我觉得自己如果当初真诚一点，不那么自以为是，可能结局好像也未知，但自己不会留有遗憾（也可能会有更大的遗憾，但起码舒心），在以后的日子里，希望别人少给我套路，O(∩_∩)O哈哈~</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/03/学习java堆和栈/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="陈不二">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/my.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/03/学习java堆和栈/" itemprop="url">学习java堆和栈</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-03T12:39:03+08:00">
-                2018-04-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/04/03/学习java堆和栈/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/04/03/学习java堆和栈/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>今天带来的是删了又删，看了又看，还是没有总结出自己的话语，原因有多种，最重要的一点的就是自己并没有去认真的去对待这件事，为什么这样了，重要的事情说三遍：还是太年轻、还是太年轻、还是太年轻。</p>
-<p>java的中的内存分为两种：“栈”和“堆”，栈通常是自己定义基本数据和对象的引用时保存的地方，而堆就是自己通过new一个新的对象或者数组保存的地方了，两者的差距也很大，据我初步了解，栈的速度远远快于堆，也就是说堆的速度不是很快，相对于程序而言，应该算慢了（中立），但java是一个面对对象的静态语言和强类型语言，用到堆内存的时候太多了，所以这个应该算java一个很大的缺点了。</p>
-<p>再往详细说，“栈”内存定义一个变量时，栈就会把他放在它的内存中，当超过这个变量的作用域时，java会自动释放掉“栈”给这变量分配的内岑空间，并且这个内存空间可以立即作为别的内存使用。“堆”中分配的内存，由java虚拟机的自动垃圾回收期来管理。</p>
-<p>我写不下去了，因为，自己并没有真正的弄懂，用别人的话虽然简单，但写不出自己的东西，没有什么成就感，所以自己该去想一想，为什么会这样？<br>没有花时间？好像是的。<br>为什么没有花时间？在弄别的。<br>为什么当你做好决定的时候又去作别的？因为不够坚定和坚持（是吗？）<br>接下来如何做？加油，相信自己，一定会成功。<br>沮丧时，你要相信自己会成功；<br>难过时，你要想起你最开心时；<br>悲伤时，你要记得自己并不孤单；</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/30/突然有一天/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="陈不二">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/my.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/30/突然有一天/" itemprop="url">突然有一天，我变了</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-30T17:06:05+08:00">
-                2018-03-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/03/30/突然有一天/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/03/30/突然有一天/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>  当一个人变得与以前不一样之时，请相信他不是被鬼上身了，因为我就是一个经常这样的一个人。</p>
-<p>  如何会变得这样，我用自己的亲身体会向大家解释或者是发神经。其实自己算一个外向孤独症的典型例子吧，但好景不长，逐渐变成内向症，造成这些有很多的原因咯，在这就不细说了。<hr></p>
-<p>  论语中不是说过，每三日，需自省，也就是去反思自己的言行举止，而我就是继承了这个优良传统的人了（俗话说，人不要脸，天下无敌），言归正传，这个真的很有用，因为，一个人所做的事情从无绝对之说，也就是在当下你认为自己所做的是对的，可到后来某一天的时候，才发现存在着错误，也就是后悔（如果你想说自己就没有过，那么我告诉你，你怕是机器人来的），我还依稀记得有人说过这句话：“世界上没有后悔药可买”，这是真的，只不过有人弥补了这个后悔，有人因后悔痛苦一生，有人就无所谓（这就是我，你相信吗？）。其实我不是这样的人，但是有些事是弥补不了的，真的，亲身感受，弥补不了就应该痛苦一生吗？我不认为这是对的，因为我想开心的过每一天，就算有生气、痛苦、纠结等等一切负能量，但并不能成为影响我的因素，因为谁没有犯过错，如果你一直以他的错误（有些人以犯错引以为傲，我也很无语）而作为评价他的个人，我觉得这并不是正确的，因为知错就改，善莫大焉，更何况我们这么友好、团结（想不出什么词语来形容）。<hr></p>
-<p>  其实今天所发表的这篇文章，只不过是自己发现以前所做的事情，自己做的并不对，然后想去弥补，但不是说你想就行了，所以才有上述所说的那些话。以前的自己觉得没有弥补好这个错误的原因在于自己，在于自己没有好好说明白，好好做出样子，后来才明白其实重点在于我以为我所做的是对的，想当然的认为对方会接受，一句话形容就是自己想多了、怕是电视剧看多了，人都是会变的，我自己都说过，我自己只不过是对某些人、某些事付出的相对而言少了一份关注，一份在意，到后来自己也明白了，变不变，相对于自己，并没有是太多的影响，自己所在乎的同样也会在乎你，相互理解、相互包容、相互相信，人与人之间才会变得简单（自己都不知道自己说什么。。。）。<hr><br>  希望每一个人都要想我一样，不管怎么样，每一天都过的开心，因为，你的身边总有关注你的人，可能是你的亲人，也可能是意想不到的人，你得带着他们的一份关心而快乐的生活，一句话形容，开心就好，下次依旧。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/20/hexo-GitHub搭建博客续集/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1138,17 +868,15 @@ public AuthenticationInfo doGetAuthenticationInfo(
 <p>cd ~/.ssh     //检查本机已存在的ssh密匙，其中.后面接ssh加不加空格我也不清楚，我反正没加</p>
 <p>如果提示：No such file or directory说明你是第一次使用git,接着输入</p>
 <p>ssh-keygen -t rsa -c “”            //双引号里面输入的是你的邮件地址</p>
-<p>接下来会要你输入三次，都是回车就行，最终会生成一个文件在你的用户目录下面<br>的 .ssh\id_rsa.pub文件，记事本打开或者其他的编程工具打开，我用的是Sublime<br>(我连写文章用的都是Sublime，就问你可不可怕，没谁可以与我一战了)复制其所有内容，粘贴之你的GitHub，进入个人设置，然后找到SSH and GPG keys<br>然后New SSH key就是创建一个新的，其中title随便你自己填写，key里面就是你要<br>粘贴的地方了<br>《（GitHub随便百度一下都可以明白了，只是在注册时，你填写邮箱时，可能需要要一点时间验证，可能很快，可能半天一天的），最重要的一点就是注册GitHub时你的用户名就是你以后的访问地址了（当然用域名也可以），所以小心一点，还有就是你注册成功之后，你得创建一个仓库（这个可能一下子你注册了不能使用，我也不清楚具体是怎么样的，反正我等了也不知道多久，我主要注册之后就没有立即使用），上面所说的邮箱验证你得验证了，看其他人所说的，只要验证<br>10-30分钟就可以了。<br>创建仓库时，你的仓库名必须是你的用户名.github.io,比如说我的<br>Cbuer.github.io》</p>
+<p>接下来会要你输入三次，都是回车就行，最终会生成一个文件在你的用户目录下面<br>的 .ssh\id_rsa.pub文件，记事本打开或者其他的编程工具打开，我用的是Sublime<br>(我连写文章用的都是Sublime，就问你可不可怕，没谁可以与我一战了)复制其所有内容，粘贴之你的GitHub，进入个人设置，然后找到SSH and GPG keys<br>然后New SSH key就是创建一个新的，其中title随便你自己填写，key里面就是你要<br>粘贴的地方了<br>《（GitHub随便百度一下都可以明白了，只是在注册时，你填写邮箱时，可能需要要一点时间验证，可能很快，可能半天一天的），最重要的一点就是注册GitHub时你的用户名就是你以后的访问地址了（当然用域名也可以），所以小心一点，还有就是你注册成功之后，你得创建一个仓库（这个可能一下子你注册了不能使用，我也不清楚具体是怎么样的，反正我等了也不知道多久，我主要注册之后就没有立即使用），上面所说的邮箱验证你得验证了，看其他人所说的，只要验证10~30分钟就可以了。<br>创建仓库时，你的仓库名必须是你的用户名.github.io,比如说我的<br>Cbuer.github.io》</p>
 <p>接下来你可以检测一下是否成功</p>
-<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>                 //这里不是不是很明白，提交就是</p>
+<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>                 //SSH第一次会验证你的密匙</p>
 <p>如果提示Are you sure you want to continue connecting (yes/no)?     输入yes，然后会看到：</p>
 <p>Hi <!--这里是你的GitHub用户名--> You’ve successfully authenticated, but GitHub does not provide shell access.<br>这个就是提示你SSH配置成功了，你还需要配置一下：</p>
-<p>git config –global user.name “–你的GitHub用户名–”        //—-注释</p>
-<p>git config –global user.email “–你的GitHub邮箱–”            //同上</p>
+<p>git config –global user.name “–你的GitHub用户名–”        //注册你的用户名</p>
+<p>git config –global user.email “–你的GitHub邮箱–”            //注册你的邮箱</p>
 <p>反正到这也差不多了，因为我也乱七八糟的拼凑起来的，许多缺点或错误的地方希望大家告知，有事没事聊聊，幸福你我他！！！</p>
 <h1><a href="mailto:cbuer@foxmail.com" target="_blank" rel="noopener">cbuer@foxmail.com</a></h1>
-
-<p>手机跟电脑访问真的不一样（亲身体验），静态框架的自适应原因吗？明天开始弄老师布置的任务，一个对我而言算是很大的Web项目了，刚开始老师说从前端到后端再到数据库这个想想还行，别跟我说实操，那怕是要我命还不带玩的，自己也想挑战一下，但是数据库跟前端我是真的菜……下次依旧！</p>
 
           
         
@@ -1280,7 +1008,7 @@ public AuthenticationInfo doGetAuthenticationInfo(
         
           
             <pre><code>首先需要电脑下载两个必须软件Node.js(Node.js)
-</code></pre><p>与git(Git - Downloads)，从网上随便找一下就有安装教程<br>    查看是否安装成功在命令行输入以下：<br>    node -v   //查看Node.js 显示Node.js版本<br>    git -v    //查看git 显示我也看不明白的</p>
+</code></pre><p>与git(Git - Downloads)，从网上随便找一下就有安装教程<br>    查看是否安装成功在命令行输入以下：<br>    node -v   //查看Node.js 显示Node.js版本<br>    git -v    //查看git 显示git的版本号</p>
 <pre><code>假如上述的要求已经可以之后（必须是在完成之后），随便你去电脑上的如何一个页面
 </code></pre><p>点击右键打开git bash(如何上述的git你安装完成了，应该是可以显示的)<br>    在git bash页面输入以下命令行：(可以参考hexo官方的文档)<br>    （<a href="https://hexo.io/zh-cn/docs/）" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/）</a><br>    npm install -g hexo-cli          //安装hexo<br>    你一定要等到完成为止，就是跳回你的当前所在位置一串彩色字体，还有就是需要耐心等待，有时候会因为一些原因（我也不晓得）卡住，这时候看看天空也不错<br>    hexo安装完成之后，你得在系统盘创建一个保存hexo的文件夹(名字随自己创建)，然后通过git bash打开，假如我把它放在我F盘的Boke文件夹下的hexo文件里面那么我通过<br>    其一：  cd /f/Boke/hexo</p>
 <pre><code>其二： 就是在hexo文件夹点击右键git bash也可以
@@ -1433,8 +1161,7 @@ git s  //这个就是发布了，输入这个之后，你只有通过 Ctrl + c �
       
         
           
-            <p>从开始了解如何去创建一个基础的个人博客网址的时候，自己觉得挺难的，<br>因为自己虽然学了Java一年多了，但是自认为学的不是很扎实，最近一直在学Web开发的框架知识，<br>但是学的比以前开心和认真，美中不足的是没有发布到服务器上面去，只能在本地发布玩玩，可怕。<br>从网上看到许多的如何搭建个人博客，自己虽然卡了几下子，但是还是弄了出来，<br>主要是用hexo + GitHub（粗制滥造都不为过）。</p>
-<p>搭建GitHub后，但是自己又从知乎上看到几篇文章对我影响很大：</p>
+            <p>搭建GitHub后，但是自己又从知乎上看到几篇文章对我影响很大：</p>
 <p>其一：用hexo + GitHub 搭建一个博客上真的太简单<br>真的在搭建完之后我感觉上挺简单的，虽然其中的内容并不是很多，<br>但是自己不就是想弄一个简单的东西吗（心态稳的一匹）？而且网上关于创建博客的文章多如牛毛，<br>想想太可怕，导致了我都想放弃了（岂能放弃，走自己的路，何必在乎他人的观点），<br>最重要我去年买的域名终于有了它用武之处，不然太浪费，你呢？</p>
 <p>其二：用GitHub来搭建个人博客是否对GitHub带来弊端<br>GitHub是一个面向开源及私有项目的托管平台，只支持git,所以有了GitHub之称，其中不乏很多当前所最新的技术，所以是获取和学习知识以及快速的好地方，用来搭建个人博客感觉就是有点大材小用，想想一句古话：“杀鸡岂用宰牛刀”，虽然有其理，但现实呢？现实是残酷的，所以维持本心，就是最好的，你觉得呢？</p>
 <p>其三：小白搭建出一个博客，难道就这样了？<br>搭建出一个博客，需要前端、后端，以及发布到服务器，虽然hexo+GitHub提供了太多的前端的框架，<br>以及我也不了解的知识，所以自己也不能详细说出来，但我从中看出一个道理，<br>就是你对一个东西感兴趣的时候，并不是说你把这个东西弄完了，也就不管不问了，<br>不要说要你去把其原理弄清楚，但至少去明白如何用什么去弄出来，因为这是你自己下了功夫去弄的，要对得起自己！</p>
@@ -1524,7 +1251,7 @@ git s  //这个就是发布了，输入这个之后，你只有通过 Ctrl + c �
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
