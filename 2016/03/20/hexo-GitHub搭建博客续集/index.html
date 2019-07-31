@@ -350,6 +350,22 @@
   
 
   
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2016/03/20/hexo-GitHub搭建博客续集/",
+  owner: 'Cbuer',
+  repo: 'Cbuer.github.io',
+  oauth: {
+    client_id: '28493090ae8a554252fe',
+    client_secret: '66977be3ba6f04b3277f08e20c3bcbe0d41a4914',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>

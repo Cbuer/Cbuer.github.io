@@ -344,6 +344,22 @@ git s  //这个就是发布了，输入这个之后，你只有通过 Ctrl + c �
   
 
   
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2016/03/19/hexo-GitHub-搭建一个博客/",
+  owner: 'Cbuer',
+  repo: 'Cbuer.github.io',
+  oauth: {
+    client_id: '28493090ae8a554252fe',
+    client_secret: '66977be3ba6f04b3277f08e20c3bcbe0d41a4914',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
